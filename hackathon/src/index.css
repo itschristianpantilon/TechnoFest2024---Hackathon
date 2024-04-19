@@ -1,0 +1,72 @@
+:root {
+  --color-highlights: #7B68EE;
+  --color-pink: #D41B69;
+  --color-tag: #F7486D;
+  --color-defaultBlue: #0D1530;
+
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: InterRegular;
+}
+@font-face {
+  font-family: InterRegular;
+  src: url(./fonts/Inter-Regular.ttf);
+  color: #333333;
+  font-size: 14px;
+}
+@font-face {
+  font-family: InterRegularGray;
+  src: url(./fonts/Inter-Regular.ttf);
+  color: #7C828D;
+  font-size: 14px;
+}
+@font-face {
+  font-family: InterMedium;
+  src: url(./fonts/Inter-Regular.ttf);
+  color: #514B81;
+  font-size: 16px;
+}
+@font-face {
+  font-family: InterBlack;
+  src: url(./fonts/Inter-Black.ttf);
+}
+@font-face {
+  font-family: InterBold;
+  src: url(./fonts/Inter-Bold.ttf);
+  color: #333333;
+}
+@font-face {
+  font-family: InterBoldRed;
+  src: url(./fonts/Inter-Bold.ttf);
+  color: #F7486D;
+  font-size: 15.63px;
+}
+@font-face {
+  font-family: InterExtraBold;
+  src: url(./fonts/Inter-Bold.ttf);
+  color: #333333;
+  font-size: 14px;
+}
+@font-face {
+  font-family: InterExtraBold;
+  src: url(./fonts/Inter-Bold.ttf);
+  color: #333333;
+  font-size: 14px;
+}
+.button__design {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: var(--color-highlights);
+  color: white;
+  font-weight: 800;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+}
