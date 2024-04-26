@@ -2,45 +2,113 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    height: 80vh;
+}
+.hero__main-container {
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    padding: 3rem 4rem;
 }
 .hero__content {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: column;
     flex: 1;
-    border: 1px solid black;
-    padding: 2rem 6rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2rem;
 }
+
+
 .hero__content h1 {
     font-family: InterExtraBold;
-    font-size: 48px;
+    font-size: 60px;
+    margin-bottom: 2rem;
 }
+
 .hero__content p {
     line-height: 25px;
     font-weight: 500;
     color: #333333;
 }
 .hero__content input {
-    width: 50%;
+    width: 70%;
     border-radius: 10px;
     padding: 1rem;
     font-size: 18px;
     border: 1px solid #B9BEC7;
     outline: none;
 }
-.hero__img {
+.hero__content-button {
+    display: flex;
+    align-items: center;
+}
+.hero__content-button button {
+    margin-right: 1rem;
+    padding: 1.2rem 2rem;
+}
+.hero__content-button h4 {
+    color: #B9BEC7;
+    font-size: 14px;
+    font-weight: 600;
+}
+.hero__content-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.hero__content-rating p{
+    margin-left: 1rem;
+}
+.hero__img{
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
 }
 .hero__img img {
-    
-    width: 300px;
-    min-width: 350px;
-    border-radius: 5%;
+    width: 85%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1050px ){
+    .hero__main-container {
+        flex-direction: column-reverse;
+        padding: 3rem 0;
+        gap: 3rem;
+    }
+
+    .hero__img img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 950px){
+    .hero__content h1 {
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 0;
+    }
+    .hero__content p {
+        line-height: 20px;
+    }
+    .hero__content-rating {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .hero__content h1 {
+        font-size: 40px;
+        line-height: 44px;
+    }
+}
+@media screen and (max-width:550px){
+    .hero__main-container {
+        padding: 3rem 2rem;
+    }
+    .hero__content p {
+        text-align: justify;
+    }
+    .hero__content-rating {
+        margin-top: 0;
+    }
 }

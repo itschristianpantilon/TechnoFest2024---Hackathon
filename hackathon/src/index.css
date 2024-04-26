@@ -70,3 +70,8 @@
 a {
   text-decoration: none;
 }
+.heading {
+  font-family: InterExtraBold;
+  font-size: 44px;
+  color: white;
+}

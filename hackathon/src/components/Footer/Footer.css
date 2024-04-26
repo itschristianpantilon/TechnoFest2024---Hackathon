@@ -1,0 +1,108 @@
+.footer__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+.footer__main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.footer__main-container_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+}
+.footer__main-container_content h3 {
+    font-family: InterExtraBold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 1rem;
+
+}
+.footer__main-container_content p {
+    font-size: 18px;
+    line-height: 45px;
+}
+.footer__main-bottom_container { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.footer__main-bottom_container-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.footer__main-bottom_container-text h1 {
+    font-family: InterExtraBold;
+    text-align: left;
+}
+.footer__main-bottom_container-text p {
+    color: #7C828D ;
+}
+.footer__main-bottom_container-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 950px){
+    .footer__main {
+        padding: 0 4rem;
+    }
+    .footer__main-bottom_container {
+        flex-direction: column;
+        gap: 1rem ;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .footer__main {
+        padding: 0 3rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .footer__main-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .footer__main-container_content h3 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0.5rem;
+    
+    }
+    .footer__main-container_content p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+    .footer__main-bottom_container-text h1 {
+        font-size: 25px;
+    }
+    .footer__main-bottom_container-text p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 550px){
+    .footer__main {
+        padding: 0 2rem;
+    }
+    .footer__main-bottom_container-text {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .footer__main-bottom_container-links {
+        justify-content: center;
+        text-align: center;
+    }
+}

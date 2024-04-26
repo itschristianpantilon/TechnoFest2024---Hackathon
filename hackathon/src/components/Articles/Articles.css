@@ -1,0 +1,141 @@
+.article__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 4rem;
+    width: 100%;
+}
+.article__main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem 5rem;
+    border-radius: 50px;
+    background: var(--color-defaultBlue);
+    width: 100%;
+    gap: 2rem;
+}
+
+.heading__article {
+    padding: 5rem 0;
+}
+
+.agenda__main-container-content {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+.agenda__main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    height: 75vh;
+}
+.article__main-content_img {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.article__main-content_img img {
+    position: absolute;
+    width: 90%;
+    top: -100px;
+    border-radius: 15px;
+}
+.article__main-content_text {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 3rem;
+}
+.article__main-content_text h1 {
+    flex: 1;
+    font-family: InterExtraBold;
+    font-size: 33px;
+    text-align: start;
+    line-height: 40px;
+}
+.article__main-content_text-person {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+}
+.article__main-content_text-person img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.article__main-readmore {
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+@media screen and (max-width: 1050px){
+    .article__main-content_text h1 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+@media screen and (max-width: 950px){
+    .agenda__main-container-content {
+        flex-direction: column;
+        gap: 10rem;
+    }
+    .agenda__main-content {
+        flex: none;
+        
+    }
+}
+@media screen and (max-width: 750px){
+    .article__main {
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 650px){
+    .article__main {
+        padding: 1rem;
+    }
+    .article__main-container {
+        padding: 2rem;
+        border-radius: 25px;
+    }
+}
+@media screen and (max-width: 550px){
+    .agenda__main-content {
+        height: 55vh;
+    }
+    .article__main-content_text h1 {
+        font-size: 20px;
+    }
+    .article__main-content_text-person img {
+        width: 60px;
+        height: 60px;
+    }
+    .article__main-content_text-person-name h3 {
+        font-size: 15px;
+    }
+    .article__main-content_text-person-name p {
+        font-size: 13px;
+    }
+
+}

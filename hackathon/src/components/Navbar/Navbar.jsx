@@ -9,12 +9,13 @@ const Navbar = () => {
         <h3>A gleam of excitement, declare, "Adventure awaits! Let's chase it down!"</h3>
         <button type='button' className='button__design'>Discover</button>
       </div>
+      
       <div className="header__container-main">
         <div className="header__container-main_logo">
           <h1>TechnoFest</h1>
           <a href="#">Articles</a>
         </div>
-        <button type='button' className='button__design'>Register</button>
+        <button type='button' className='button__design' onClick={() => {document.location.href = "../../../register.html"}}>Register</button>
       </div>
     </header>
   )

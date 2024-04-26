@@ -6,6 +6,9 @@ import { art00, icon00 } from '../../assets/index'
 const Hero = () => {
   return (
     <div className='hero__main'>
+
+      <div className="hero__main-container">
+        
       <div className="hero__content">
           <h1>TECHNO FEST <br /> 2024</h1>
 
@@ -28,9 +31,13 @@ const Hero = () => {
           </div>
       </div>
 
+
       <div className="hero__img">
             <img src={art00} alt="art00" />
       </div>
+
+      </div>
+
     </div>
   )
 }

@@ -1,0 +1,22 @@
+.section__main {
+    background: var(--color-defaultBlue);
+    padding: 0.5rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section__main-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.section__main-container img {
+    width: 80px;
+}
+@media screen and (max-width: 550px){
+    .section__main-container {
+        gap: 2rem;
+    }
+}
