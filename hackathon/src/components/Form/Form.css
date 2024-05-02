@@ -1,0 +1,200 @@
+.register__main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4rem 8rem;
+    position: relative;
+    overflow: hidden;
+}
+.register__desciption {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 6rem;
+}
+.register__description_img-top{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.register__description_img-top img:nth-child(1){
+    width: 10%;
+}
+.register__description_img-top img:nth-child(2){
+    width: 40%;
+    border-radius: 25px;
+}
+.register__description_text p {
+    font-size: 22px;
+    line-height: 30px;
+    color: #333333 ;
+}
+.register__description_text p:first-child {
+    margin-bottom: 3rem;
+}
+.register__form-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.register__gradient {
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    bottom: 30%;
+    left: 60%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.register__form-main {
+    background: white;
+    border-radius: 50px;
+    padding: 3rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+.register__form-main p {
+    font-size: 15px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 1rem;
+}
+
+.register__form-main a {
+    color: #514B81;
+    text-decoration: underline;
+}
+
+.register__form-main button {
+    flex: 1;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 1.2rem 0;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.register__form-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.register__form-content h4 {
+    font-family: InterExtraBold;
+    font-size: 18px;
+    line-height: 24px;
+    
+}
+.register__form-content span {
+    color: var(--color-pink);
+}
+.register__form-content input {
+    border: 1px solid #7C828D;
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    
+}
+
+@media screen and (max-width: 1050px){
+    .register__main {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        gap: 4rem;
+    }
+    .register__desciption {
+        padding: 0 4rem;
+    }
+    .register__description_img-top {
+        justify-content: center;
+    }
+    .register__gradient {
+        position: absolute;
+        z-index: -1;
+        width: 60%;
+        bottom: 15%;
+        left: 60%;
+        border-radius: 100%;
+    }
+}
+@media screen and (max-width: 650px){
+    .register__main {
+        padding: 2rem;
+        gap: 1rem;
+    }
+    .register__desciption{
+        padding: 0 1rem;
+    }
+    .register__description_img-top img:nth-child(2){
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .register__description_text p {
+        font-size: 18px;
+    }
+    .register__description_text p:first-child {
+        margin-bottom: 1rem;
+    }
+    .register__form-main {
+        padding: 2rem;
+    }
+    .register__form-content h4 {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px){
+    .register__main {
+        padding: 1rem;
+    }
+    .register__desciption {
+        gap: 1rem;
+    }
+    .register__description_text p {
+        font-size: 14px;
+    }
+    .register__art002 {
+        width: 100%;
+    }
+    .register__form-main {
+        padding: 1.5rem;
+    }
+    .register__form-content h4 {
+        font-size: 14px;
+    }
+    .register__form-content input {
+        padding: 0.6rem;
+    }
+    .register__form-main p {
+        font-size: 12px;
+    }
+    .register__form-main p:last-child {
+        font-size: 10px;
+    }
+    .register__form-main button {
+        padding: 0.8rem;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .register__description_img-top img:nth-child(1){
+        width: 18%;
+    }
+    .register__description_img-top img:nth-child(2){
+        width: 60%;
+    }
+}

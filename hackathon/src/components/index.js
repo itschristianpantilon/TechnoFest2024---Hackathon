@@ -1,6 +1,6 @@
 import Agenda from './Agenda/Agenda';
 import Articles from './Articles/Articles';
-import Discover from './Discover/Discover';
+import DiscoverContainer from './Discover/DiscoverContainer';
 import Featured from './Featured/Featured';
 import Footer from './Footer/Footer';
 import Form from './Form/Form';
@@ -11,7 +11,7 @@ import Section from './Section/Section';
 export {
     Agenda,
     Articles,
-    Discover,
+    DiscoverContainer,
     Featured,
     Footer,
     Form,

@@ -1,20 +1,22 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import './App.css'
-import  { Agenda, Articles, Featured, Footer, Hero, Navbar, Section } from './components/index';
+import Homepage from './pages/Homepage';
+import Register from './pages/Register';
+import Discover from './pages/Discover';
+
 
 function App() {
   
   return (
    <div>
-    <Navbar />
-    <Hero />
-    <Section />
-    <Featured />
-    <Agenda />
-    <Articles />
-    <Section />
-    <Footer />
-
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Homepage />} />
+        <Route path='/home' element={<Homepage />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/discover' element={<Discover />} />
+      </Routes>
+    </BrowserRouter>
    </div>
   )
 }
